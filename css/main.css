@@ -87,11 +87,19 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* -- BASE HEADER - FOOTER STYLES -- */
+.content-wrapper {
+  outline: 3px dotted red;
+  width: 90%;
+  margin: 50px 0;
+}
+
+/* --------- BASE HEADER - FOOTER STYLES --------- */
+
 
 header {
   display: flex;
   justify-content: center;
+  padding: 15px 0;
 }
 
 header .content-wrapper {
@@ -99,11 +107,23 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
+}
+
+.header-divider {
+  width: 100%;
+  height: 1px;
+  padding: 10px 0 20px 0;
+}
+
+header nav {
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
 footer {
@@ -111,6 +131,18 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+}
+
+footer .contact {
+  margin-bottom: 50px;
 }
 
 footer .social-icons {
@@ -125,6 +157,10 @@ footer .social-icons p {
   align-items: center;
 }
 
+footer .copyright {
+  margin: 20px 0;
+}
+
 
 /* --------- MOBILE STYLES - HOMEPAGE --------- */
 
@@ -137,10 +173,11 @@ footer .social-icons p {
 
 /* ASIDE AREA */
 
-.aside {
+aside {
   display: flex;
   justify-content: center;
 }
+
 
 /* FEATURES AREA */
 
@@ -149,11 +186,24 @@ footer .social-icons p {
   justify-content: center;
 }
 
-.features .features-items {
+.features h2 {
+  margin-bottom: 60px;
+}
+
+.features article {
+  width: 63%;
+  margin: 30px 0;
+}
+
+.features .features-item-description {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
+}
+
+.features p {
+  margin: 0;
 }
 
 /* REVIEWS AREA */
@@ -161,6 +211,15 @@ footer .social-icons p {
 .reviews {
   display: flex;
   justify-content: center;
+}
+
+.reviews h2 {
+  margin-bottom: 40px;
+}
+
+.reviews h3 {
+  width: 55%;
+  margin: 20px 0
 }
 
 
@@ -176,6 +235,10 @@ footer .social-icons p {
   justify-content: center;
 }
 
+.contact-content p {
+  margin: 0;
+}
+
 
 /* --------- FAQ PAGE --------- */
 
@@ -189,8 +252,16 @@ footer .social-icons p {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
+  margin: 50px 0 0 0; 
 }
 
+.faq h2 {
+  margin-bottom: 40px;
+}
+
+.faq-content {
+  margin-bottom: 50px;
+}
 
 
 
